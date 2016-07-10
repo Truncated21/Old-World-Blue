@@ -57,34 +57,10 @@
 	body_parts_covered = 0
 
 //Security
-/obj/item/clothing/head/beret/sec
-	name = "security beret"
+/obj/item/clothing/head/beret/secchief
+	name = "security chiefs beret"
 	desc = "A beret with the security insignia emblazoned on it. For officers that are more inclined towards style than safety."
-	icon_state = "beret_officer"
-/obj/item/clothing/head/beret/sec/navy/officer
-	name = "officer beret"
-	desc = "A navy blue beret with an officer's rank emblem. For officers that are more inclined towards style than safety."
-	icon_state = "beret_navy_officer"
-/obj/item/clothing/head/beret/sec/navy/hos
-	name = "officer beret"
-	desc = "A navy blue beret with a head of security's rank emblem. For officers that are more inclined towards style than safety."
-	icon_state = "beret_navy_hos"
-/obj/item/clothing/head/beret/sec/navy/warden
-	name = "warden beret"
-	desc = "A navy blue beret with a warden's rank emblem. For officers that are more inclined towards style than safety."
-	icon_state = "beret_navy_warden"
-/obj/item/clothing/head/beret/sec/corporate/officer
-	name = "officer beret"
-	desc = "A corporate black beret with an officer's rank emblem. For officers that are more inclined towards style than safety."
-	icon_state = "beret_corporate_officer"
-/obj/item/clothing/head/beret/sec/corporate/hos
-	name = "officer beret"
-	desc = "A corporate black beret with a head of security's rank emblem. For officers that are more inclined towards style than safety."
-	icon_state = "beret_corporate_hos"
-/obj/item/clothing/head/beret/sec/corporate/warden
-	name = "warden beret"
-	desc = "A corporate black beret with a warden's rank emblem. For officers that are more inclined towards style than safety."
-	icon_state = "beret_corporate_warden"
+	icon_state = "beret_secchief"
 /obj/item/clothing/head/beret/engineering
 	name = "engineering beret"
 	desc = "A beret with the engineering insignia emblazoned on it. For engineers that are more inclined towards style than safety."
@@ -93,14 +69,20 @@
 	name = "purple beret"
 	desc = "A stylish, if purple, beret."
 	icon_state = "beret_purple"
-/obj/item/clothing/head/beret/centcom/officer
-	name = "officers beret"
-	desc = "A dark blue beret adorned with a silver patch. Worn by NanoTrasen Officials."
-	icon_state = "beret_centcom_officer"
-/obj/item/clothing/head/beret/centcom/captain
+/obj/item/clothing/head/beret/seniorconstable
+	name = "senior constable's beret"
+	desc = "A dark blue beret adorned with a silver patch. Worn by Themis Security senior constables."
+	icon_state = "beret_seniorconstable"
+
+/obj/item/clothing/head/beret/centcom
 	name = "captains beret"
 	desc = "A white beret adorned with a blue patch. Worn by NanoTrasen command staff."
 	icon_state = "beret_centcom_captain"
+
+/obj/item/clothing/head/constableforagecap
+	name = "forage cap"
+	desc = "That's a forage cap with a NT insignia on it."
+	icon_state = "constableforagecap"
 
 //Medical
 /obj/item/clothing/head/surgery

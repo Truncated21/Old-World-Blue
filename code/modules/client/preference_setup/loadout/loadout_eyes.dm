@@ -28,16 +28,6 @@
 /datum/gear/eyes/sciencegoggles
 	display_name = "Science Goggles"
 	path = /obj/item/clothing/glasses/science
-
-/datum/gear/eyes/security
-	display_name = "Security HUD (Security)"
-	path = /obj/item/clothing/glasses/hud/security
-	allowed_roles = list("Security Officer","Head of Security","Warden")
-
-/datum/gear/eyes/security/prescriptionsec
-	display_name = "Security HUD, prescription (Security)"
-	path = /obj/item/clothing/glasses/hud/security/prescription
-
 /datum/gear/eyes/medical
 	display_name = "Medical HUD (Medical)"
 	path = /obj/item/clothing/glasses/hud/health

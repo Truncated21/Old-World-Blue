@@ -36,19 +36,6 @@
 	display_name = "wallet, polychromic"
 	path = /obj/item/weapon/storage/wallet/poly
 
-/datum/gear/accessory/holster
-	display_name = "holster, armpit"
-	path = /obj/item/clothing/accessory/holster/armpit
-	allowed_roles = list("Captain", "Head of Personnel", "Security Officer", "Warden", "Head of Security","Detective")
-
-/datum/gear/accessory/holster/hip
-	display_name = "holster, hip"
-	path = /obj/item/clothing/accessory/holster/hip
-
-/datum/gear/accessory/holster/waist
-	display_name = "holster, waist"
-	path = /obj/item/clothing/accessory/holster/waist
-
 /datum/gear/accessory/tie
 	display_name = "tie, black"
 	path = /obj/item/clothing/accessory/black

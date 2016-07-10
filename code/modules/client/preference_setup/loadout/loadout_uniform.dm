@@ -143,21 +143,6 @@
 	path = /obj/item/clothing/under/rank/cargo/skirt
 	allowed_roles = list("Quartermaster")
 
-/datum/gear/uniform/job_skirt/warden
-	display_name = "skirt, warden"
-	path = /obj/item/clothing/under/rank/security/warden/skirt
-	allowed_roles = list("Head of Security", "Warden")
-
-/datum/gear/uniform/job_skirt/security
-	display_name = "skirt, security"
-	path = /obj/item/clothing/under/rank/security/skirt
-	allowed_roles = list("Head of Security", "Warden", "Detective", "Security Officer")
-
-/datum/gear/uniform/job_skirt/head_of_security
-	display_name = "skirt, hos"
-	path = /obj/item/clothing/under/rank/security/head_of_security/skirt
-	allowed_roles = list("Head of Security")
-
 /datum/gear/uniform/jeans_qm
 	display_name = "jeans, QM"
 	path = /obj/item/clothing/under/rank/cargo/jeans
@@ -288,26 +273,6 @@
 	path = /obj/item/clothing/under/dress/dress_cap
 	allowed_roles = list("Captain")
 
-/datum/gear/uniform/corpdetsuit
-	display_name = "uniform, corporate (Detective)"
-	path = /obj/item/clothing/under/det/corporate
-	allowed_roles = list("Detective","Head of Security")
-
-/datum/gear/uniform/corpsecsuit
-	display_name = "uniform, corporate (Security)"
-	path = /obj/item/clothing/under/rank/security/corp
-	allowed_roles = list("Security Officer","Head of Security","Warden")
-
-/datum/gear/uniform/corpwarsuit
-	display_name = "uniform, corporate (Warden)"
-	path = /obj/item/clothing/under/rank/warden/corp
-	allowed_roles = list("Head of Security","Warden")
-
-/datum/gear/uniform/corphossuit
-	display_name = "uniform, corporate (Head of Security)"
-	path = /obj/item/clothing/under/rank/head_of_security/corp
-	allowed_roles = list("Head of Security")
-
 /datum/gear/uniform/uniform_hop
 	display_name = "uniform, HoP's dress"
 	path = /obj/item/clothing/under/dress/dress_hop
@@ -318,21 +283,6 @@
 	path = /obj/item/clothing/under/dress/dress_hr
 
 	allowed_roles = list("Head of Personnel")
-
-/datum/gear/uniform/navysecsuit
-	display_name = "uniform, navy blue (Security)"
-	path = /obj/item/clothing/under/rank/security/navyblue
-	allowed_roles = list("Security Officer","Head of Security","Warden")
-
-/datum/gear/uniform/navywarsuit
-	display_name = "uniform, navy blue (Wardem)"
-	path = /obj/item/clothing/under/rank/warden/navyblue
-	allowed_roles = list("Head of Security","Warden")
-
-/datum/gear/uniform/navyhossuit
-	display_name = "uniform, navy blue (Head of Security)"
-	path = /obj/item/clothing/under/rank/head_of_security/navyblue
-	allowed_roles = list("Head of Security")
 
 /datum/gear/uniform/shortplaindress
 	display_name = "plain dress"

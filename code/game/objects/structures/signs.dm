@@ -77,6 +77,12 @@
 	desc = "A warning sign which reads 'SECURE AREA'."
 	icon_state = "securearea"
 
+/obj/structure/sign/themissecurity
+	name = "\improper Themis Security"
+	desc = "That's the Themis Security insignia."
+	icon_state = "themissecurity"
+
+
 /obj/structure/sign/biohazard
 	name = "\improper BIOHAZARD"
 	desc = "A warning sign which reads 'BIOHAZARD'."

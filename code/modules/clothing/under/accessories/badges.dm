@@ -99,34 +99,33 @@
 		..()
 		return
 
-/obj/item/clothing/accessory/badge/holo/warden
-	name = "warden's holobadge"
-	desc = "A silver corporate security badge. Stamped with the words 'Warden.'"
-	icon_state = "silverbadge"
+
+/obj/item/clothing/accessory/badge/sec/constable
+	name = " constable's badge"
+	desc = "A silver Themis Security badge. Stamped with the words 'Constable.'"
+	icon_state = "constablebadge"
 	slot_flags = SLOT_TIE | SLOT_BELT
 
-/obj/item/clothing/accessory/badge/holo/hos
-	name = "head of security's holobadge"
+/obj/item/clothing/accessory/badge/sec/seniorconstable
+	name = "senior constable's badge"
+	desc = "A silver Themis Security badge. Stamped with the words 'Senior Constable.'"
+	icon_state = "constablebadge"
+	slot_flags = SLOT_TIE | SLOT_BELT
+
+/obj/item/clothing/accessory/badge/sec/overseer
+	name = "overseer's badge"
+	desc = "A silver Themis Security badge. Stamped with the words 'Overseer.'"
+	icon_state = "overseerbadge"
+	slot_flags = SLOT_TIE | SLOT_BELT
+
+/obj/item/clothing/accessory/badge/sec/secchief
+	name = "head of security's badge"
 	desc = "An immaculately polished gold security badge. Labeled 'Head of Security.'"
-	icon_state = "goldbadge"
+	icon_state = "secchiefbadge"
 	slot_flags = SLOT_TIE | SLOT_BELT
 
-/obj/item/clothing/accessory/badge/holo/detective
-	name = "detective's holobadge"
+/obj/item/clothing/accessory/badge/sec/detective
+	name = "detective's badge"
 	desc = "An immaculately polished gold security badge on leather. Labeled 'Detective.'"
-	icon_state = "marshalbadge"
+	icon_state = "badge"
 	slot_flags = SLOT_TIE | SLOT_BELT
-
-/obj/item/weapon/storage/box/holobadge/hos
-	name = "holobadge box"
-	desc = "A box claiming to contain holobadges."
-	New()
-		new /obj/item/clothing/accessory/badge/holo(src)
-		new /obj/item/clothing/accessory/badge/holo(src)
-		new /obj/item/clothing/accessory/badge/holo/warden(src)
-		new /obj/item/clothing/accessory/badge/holo/detective(src)
-		new /obj/item/clothing/accessory/badge/holo/detective(src)
-		new /obj/item/clothing/accessory/badge/holo/hos(src)
-		new /obj/item/clothing/accessory/badge/holo/cord(src)
-		..()
-		return

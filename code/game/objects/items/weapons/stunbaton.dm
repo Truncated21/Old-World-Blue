@@ -182,3 +182,30 @@
 	hitcost = 2500
 	attack_verb = list("poked")
 	slot_flags = null
+
+/obj/item/weapon/melee/baton/shocker
+	name = "shocker"
+	desc = "That's a small utility to stun scumbags."
+	icon_state = "shocker_nocell"
+	item_state = "shocker"
+	force = 3
+	throwforce = 3
+	stunforce = 0
+	agonyforce = 60	//same force as a stunbaton, but uses way more charge.
+	hitcost = 500
+	attack_verb = list("poked")
+	slot_flags = null
+	w_class = 2
+	lightcolor = "#33CCFF"
+
+
+/obj/item/weapon/melee/baton/shocker/New()
+	..()
+	update_icon()
+	return
+
+/obj/item/weapon/melee/baton/shocker/loaded/New()
+	..()
+	bcell = new/obj/item/weapon/cell/high(src)
+	update_icon()
+	return

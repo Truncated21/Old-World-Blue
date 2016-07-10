@@ -45,6 +45,22 @@
 	update_force()
 	add_fingerprint(user)
 
+/obj/item/weapon/material/butterfly/sec
+	name = "survival knife"
+	desc = "That's a folding knife used by Themis Security personnel."
+	icon_state = "switchblade"
+	unbreakable = 1
+
+/obj/item/weapon/material/butterfly/sec/attack_self(mob/user)
+	active = !active
+	if(active)
+		user << "<span class='notice'>You flip out \the [src].</span>"
+		playsound(user, 'sound/weapons/flipblade.ogg', 15, 1)
+	else
+		user << "<span class='notice'>\The [src] can now be concealed.</span>"
+	update_force()
+	add_fingerprint(user)
+
 /*
  * Kitchen knives
  */

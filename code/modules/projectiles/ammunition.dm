@@ -10,6 +10,7 @@
 
 	var/leaves_residue = 1
 	var/caliber = ""					//Which kind of guns it can be loaded into
+	var/caseless					//Does the ammo casing disappear after fired?
 	var/projectile_type					//The bullet type to create when New() is called
 	var/obj/item/projectile/BB = null	//The loaded bullet - make it so that the projectiles are created only when needed?
 //	var/spent_icon = null
@@ -25,6 +26,9 @@
 /obj/item/ammo_casing/proc/expend()
 	. = BB
 	BB = null
+	if(caseless) // I honestly wasn't sure where to stick this part.
+		qdel(src)
+		return
 	set_dir(pick(cardinal)) //spin spent casings
 	update_icon()
 
