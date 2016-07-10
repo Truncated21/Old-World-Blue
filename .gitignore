@@ -1,5 +1,7 @@
 #ignore misc BYOND files
 Thumbs.db
+old-world-blue.dme.rej
+README.md
 *.log
 *.int
 *.rsc
@@ -7,5 +9,9 @@ Thumbs.db
 *.lk
 *.backup
 data/
-cfg/
+config/
+tools/
 
+/.gitattributes
+/.gitignore
+/.gitconfig
