@@ -776,7 +776,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 			if (in_range(src, U) && loc == U)
 				n = sanitizeSafe(n, extra = 0)
 				if (mode == 1)
-					note = html_decode(n)
+					note = rhtml_decode(n)
 					notehtml = note
 					note = replacetext(note, "\n", "<br>")
 			else
@@ -807,7 +807,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 			var/t = input(U, "Please enter new ringtone", name, ttone) as text
 			if (in_range(src, U) && loc == U)
 				if (t)
-					if(src.hidden_uplink && hidden_uplink.check_trigger(U, lowertext(t), lowertext(lock_code)))
+					if(src.hidden_uplink && hidden_uplink.check_trigger(U, rlowertext(t), rlowertext(lock_code)))
 						U << "The PDA softly beeps."
 						ui.close()
 					else
@@ -1404,7 +1404,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 		// Until we run out of complete tags...
 		while(tag_start&&tag_stop)
 			var/pre = copytext(raw_scan,1,tag_start) // Get the stuff that comes before the tag
-			var/tag = lowertext(copytext(raw_scan,tag_start+1,tag_stop)) // Get the tag so we can do intellegent replacement
+			var/tag = rlowertext(copytext(raw_scan,tag_start+1,tag_stop)) // Get the tag so we can do intellegent replacement
 			var/tagend = findtext(tag," ") // Find the first space in the tag if there is one.
 
 			// Anything that's before the tag can just be added as is.
