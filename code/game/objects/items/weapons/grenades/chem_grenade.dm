@@ -278,3 +278,27 @@
 		beakers += B1
 		beakers += B2
 		icon_state = initial(icon_state) +"_locked"
+
+
+/obj/item/weapon/grenade/chem_grenade/teargas
+	name = "tear gas grenade"
+	desc = "Perfect for crowd control, isn't it?"
+	path = 1
+	stage = 2
+
+	New()
+		..()
+		var/obj/item/weapon/reagent_containers/glass/beaker/large/B1 = new(src)
+		var/obj/item/weapon/reagent_containers/glass/beaker/large/B2 = new(src)
+
+		B1.reagents.add_reagent("condensedcapsaicin", 70)
+		B1.reagents.add_reagent("potassium", 50)
+		B2.reagents.add_reagent("phosphorus", 50)
+		B2.reagents.add_reagent("sugar", 50)
+		B2.reagents.add_reagent("condensedcapsaicin", 20)
+
+		detonator = new/obj/item/device/assembly_holder/timer_igniter(src)
+
+		beakers += B1
+		beakers += B2
+		icon_state = "grenade"

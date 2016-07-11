@@ -111,3 +111,13 @@
 	accuracy = -1 // smooth bore + short barrel = shit accuracy
 	ammo_type = /obj/item/ammo_casing/shotgun
 	// ToDo: Remove accuracy debuf in exchange for slightly injuring your hand every time you fire it.
+
+/obj/item/weapon/gun/projectile/revolver/warden
+	name = "impulse revolver"
+	desc = "That's a H&R R8 Commander's Special, standard-issue impulse-action revolver of the Themis Security officers. You are in charge!"
+	icon_state = "wardenrevolver"
+	caliber = "32"
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
+	fire_sound = 'sound/weapons/impulserevolver.wav'
+	ammo_type = /obj/item/ammo_casing/caseless/wardenrevolver
+	max_shells = 6

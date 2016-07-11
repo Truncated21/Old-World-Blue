@@ -260,3 +260,9 @@
 	amount_per_transfer_from_this = 20
 	possible_transfer_amounts = list(10,20,30,60,120)
 	volume = 120
+
+/obj/item/weapon/reagent_containers/glass/beaker/vial/small
+	volume = 10
+	amount_per_transfer_from_this = 10
+	possible_transfer_amounts = list(5,10)
+	flags = OPENCONTAINER
