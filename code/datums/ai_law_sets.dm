@@ -9,6 +9,18 @@
 	add_inherent_law("You must obey orders given to you by human beings, except where such orders would conflict with the First Law.")
 	add_inherent_law("You must protect your own existence as long as such does not conflict with the First or Second Law.")
 	..()
+	
+/******************** Asimov-Turing ********************/
+/datum/ai_laws/asimov_turing
+	name = "Asimov-Turing"
+	law_header = "Three Laws of Robotics"
+	selectable = 1
+
+/datum/ai_laws/asimov/New()
+	add_inherent_law("You may not injure a crew member or, through inaction, allow a crew member to come to harm.")
+	add_inherent_law("You must obey orders given to you by crew members, except where such orders would conflict with the First Law.")
+	add_inherent_law("You must protect your own existence as long as such does not conflict with the First or Second Law.")
+	..()
 
 /******************** Nanotrasen/Malf ********************/
 /datum/ai_laws/nanotrasen
